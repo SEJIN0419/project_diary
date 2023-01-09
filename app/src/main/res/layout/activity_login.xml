@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Main.login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp">
+
+        <!-- 아이디 텍스트 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="55px"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/font"
+            android:text="아이디">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- 이메일 입력창  -->
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_white_blackstroke"
+            android:hint="  아이디 입력"
+            android:fontFamily="@font/bmjua_"
+            android:textSize="45px">
+        </EditText>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+            <!-- 비밀번호 텍스트  -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="55px"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/font"
+                android:text="비밀번호">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- 비밀번호 입력창  -->
+            <EditText
+                android:id="@+id/email_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_white_blackstroke"
+                android:hint="  비밀번호 입력"
+                android:fontFamily="@font/bmjua_"
+                android:textSize="45px">
+            </EditText>
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_black_blackstroke"
+            android:textSize="60px"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bmjua_"
+            android:text="로그인 ">
+
+        </Button>
+</LinearLayout>
