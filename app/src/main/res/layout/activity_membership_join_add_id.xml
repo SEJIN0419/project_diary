@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Main.membership_join_add_id">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거의 다 왔어요! \n이제 다이어리 아이디를 \n설정해주세요."
+            android:textColor="@color/black"
+            android:textSize="80px"
+            android:fontFamily="@font/bmjua_">
+        </TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입에 필요한 개성 있는\n아이디를 입력해서 생성해 주세요!!"
+            android:textColor="@color/gray"
+            android:textSize="50px"
+            android:fontFamily="@font/bmjua_">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- 아이디 입력창  -->
+        <EditText
+            android:id="@+id/input_id"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_white_blackstroke"
+            android:inputType="text"
+            android:hint="  아이디 입력"
+            android:fontFamily="@font/bmjua_"
+            android:textSize="45px">
+        </EditText>
+
+        <Button
+            android:id="@+id/next_info"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_purple"
+            android:fontFamily="@font/font"
+            android:textColor="@color/white"
+            android:textSize="55px"
+            android:text="다음"
+            android:layout_marginBottom="50dp">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

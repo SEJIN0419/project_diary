@@ -10,16 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp">
+        android:layout_marginLeft="17dp">
 
         <!-- 아이디 텍스트 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:textSize="55px"
-            android:textColor="@color/orange"
+            android:textColor="@color/purple_200"
             android:fontFamily="@font/font"
             android:text="아이디">
         </TextView>
@@ -30,12 +29,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
-        <!-- 이메일 입력창  -->
+        <!-- 아이디 입력창  -->
         <EditText
             android:id="@+id/email_id"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="5dp"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/btn_white_blackstroke"
             android:hint="  아이디 입력"
             android:fontFamily="@font/bmjua_"
@@ -43,19 +42,16 @@
         </EditText>
     </LinearLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp">
+            android:layout_marginLeft="17dp">
             <!-- 비밀번호 텍스트  -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
                 android:textSize="55px"
-                android:textColor="@color/orange"
+                android:textColor="@color/purple_200"
                 android:fontFamily="@font/font"
                 android:text="비밀번호">
             </TextView>
@@ -67,25 +63,66 @@
             android:gravity="center"
             android:orientation="vertical">
             <!-- 비밀번호 입력창  -->
-            <EditText
-                android:id="@+id/email_password"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/btn_white_blackstroke"
-                android:hint="  비밀번호 입력"
-                android:fontFamily="@font/bmjua_"
-                android:textSize="45px">
-            </EditText>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="14dp"
+                    android:background="@drawable/btn_white_blackstroke"
+                    android:fontFamily="@font/bmjua_"
+                    android:textSize="40px"
+                    android:hint="비밀번호 다시 입력"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
+
+        <!-- 로그인 버튼 -->
         <Button
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:background="@drawable/btn_black_blackstroke"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_purple"
             android:textSize="60px"
             android:textColor="@color/white"
             android:fontFamily="@font/bmjua_"
             android:text="로그인 ">
-
         </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 계정 찾기 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="35px"
+            android:textColor="@color/purple_200"
+            android:fontFamily="@font/font"
+            android:text="계정 찾기">
+        </TextView>
+
+        <!-- 비밀 번호 찾기 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="35px"
+            android:textColor="@color/purple_200"
+            android:fontFamily="@font/font"
+            android:text="비밀 번호  찾기">
+        </TextView>
+    </LinearLayout>
 </LinearLayout>
